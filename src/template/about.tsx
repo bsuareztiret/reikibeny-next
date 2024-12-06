@@ -1,12 +1,13 @@
 import Image from "next/image";
+import { PATH } from "../../utils/constants";
 
 const About = () => {
   return (
-    <a className="link" href="/about">
+    <a className="link" href={`${PATH}/about`}>
       <div className="card">
         <ul className="list">
           <li className="split">
-            <Image src="/documents/img/shooting/pp_01.png" width={2000} height={2000} blurDataURL="/documents/img/fast-loading/lc-pp_01.png" alt="profil picture" />
+            <Image src={`${PATH}/documents/img/shooting/pp_01.png`} width={2000} height={2000} blurDataURL="/documents/img/fast-loading/lc-pp_01.png" alt="profil picture" />
             <div className="flex-container">
               <h2>À propos</h2>
               <p>
