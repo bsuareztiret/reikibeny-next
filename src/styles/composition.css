@@ -1,0 +1,100 @@
+.index-grid {
+  display: grid;
+  grid-template-areas:
+    "h h h h  h h h h"
+    "c c c c  c c c c"
+    "w w w w  w w w w"
+    "p p p p  p p p p";
+  grid-gap: 10px;
+  /* min-height: 200vh; */
+}
+
+.index-grid-header {
+  grid-area: h;
+}
+
+.index-grid-choose {
+  grid-area: c;
+}
+
+.index-grid-phylo {
+  grid-area: p;
+}
+
+.index-grid-way {
+  grid-area: w;
+}
+
+.container {
+  /* display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap; */
+  position: relative;
+  text-align: center;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.always-two-columns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1em;
+}
+
+@media (min-width: 768px) {
+  .container-item {
+    width: 50%;
+    min-width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-item {
+    width: calc(100% / 3);
+    min-width: calc(100% / 3);
+  }
+}
+
+@media (min-width: 1190px) {
+  .container-item {
+    width: 25%;
+    min-width: 25%;
+  }
+
+  /* .index-grid {
+    grid-template-areas:
+    "h h h h  h h h h"
+    "a a a a  a a a a"
+    "b b b b  b b l l"
+    "c c c c  c c c c"
+    "f f f f  f f f f";
+  } */
+}
+
+@media (min-width: 1024px) {
+  .split {
+    flex-direction: row;
+  }
+
+  .split > * {
+    flex-basis: 100%;
+  }
+
+  .split > * + * {
+    margin-left: 2em;
+  }
+}

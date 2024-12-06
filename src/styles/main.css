@@ -1,0 +1,68 @@
+:root {
+  --light-s: #e9c46a;
+  --light-m: #792222;
+  --light-l: #470f0f;
+
+  --dark-s: #2a9d8f;
+  --dark-m: #c8bf19;
+
+  --ff-primary: "Andale Mono", sans-serif;
+  --ff-accent: "Helvetica Neue", sans-serif;
+
+  --duration: 20s;
+  --delay: 0s;
+  --loops: infinite;
+  --direction: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  font-size: 1.3125rem;
+  line-height: 1.6;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  /* color: var(--dark-m); */
+  font-family: var(--ff-accent);
+  font-weight: 900;
+  line-height: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: contain;
+  shape-margin: 0.75em;
+  border-radius: 2%;
+}
+
+button {
+  font-family: var(--ff-primary);
+  padding: 0.75em;
+  background-color: white;
+  border-radius: 6%;
+}
+
+button:hover {
+  transition: all 0.5s;
+  background-color: #c0c0c0;
+  border-radius: 0%;
+}
