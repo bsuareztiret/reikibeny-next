@@ -1,11 +1,12 @@
 import Image from "next/image";
+import { PATH } from "../../utils/constants";
 
 const MassageExplanation = () => {
   return (
     <div className="card">
       <ul className="list">
         <li className="split">
-          <Image src="/documents/img/shooting/pmr_02.JPG" width={2000} height={2000} blurDataURL="/documents/img/fast-loading/lc-pmr_02.JPG" alt="hand massage picture" />
+          <Image src={`${PATH}/documents/img/shooting/pmr_02.JPG`} width={2000} height={2000} blurDataURL={`${PATH}/documents/img/fast-loading/lc-pmr_02.JPG`} alt="hand massage picture" />
           <div className="flex-container">
             <h2>Massage-Reiki déroulement d'une séance</h2>
             <br />

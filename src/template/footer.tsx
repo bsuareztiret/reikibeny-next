@@ -1,10 +1,11 @@
 import Image from "next/image";
+import { PATH } from "../../utils/constants";
 
 const Footer = () => {
   return (
     <footer className="floor-roof card pad">
       <div className="always-two-columns">
-        <Image src="/documents/img/1.png" width={400} height={400} alt="logo" />
+        <Image src={`${PATH}/documents/img/1.png`} width={400} height={400} alt="logo" />
         <h2>Contact</h2>
       </div>
       <p>J'exerce dans la région de Bruxelles.</p>
