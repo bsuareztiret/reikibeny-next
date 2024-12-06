@@ -6,7 +6,7 @@ const AboutExplanation = () => {
     <div className="card">
       <ul className="list">
         <li className="split">
-          <Image src={`${PATH}/documents/img/shooting/pp_01.png`} width={200} height={200} blurDataURL={`${PATH}/documents/img/fast-loading/lc-pp_01.png`} alt="profil picture" />
+          <Image src={`${PATH}/documents/img/shooting/pp_01.png`} width={2000} height={2000} blurDataURL={`${PATH}/documents/img/fast-loading/lc-pp_01.png`} alt="profil picture" />
           <div className="flex-container">
             <h2>À propos</h2>
             <p>
