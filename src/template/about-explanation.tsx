@@ -6,15 +6,15 @@ const AboutExplanation = () => {
     <div className="card">
       <ul className="list">
         <li className="split">
-          <Image src={`${PATH}/documents/img/shooting/pp_01.png`} width={2000} height={2000} blurDataURL={`${PATH}/documents/img/fast-loading/lc-pp_01.png`} alt="profil picture" />
+          {/* <Image src={`${PATH}/documents/img/shooting/pp_01.png`} width={2000} height={2000} blurDataURL={`${PATH}/documents/img/fast-loading/lc-pp_01.png`} alt="profil picture" /> */}
           <div className="flex-container">
-            <h2>À propos</h2>
+            <h2>Mon parcours</h2>
             <p>
               Je suis originaire de Bruxelles. J'y ai grandi, fait toutes mes études, et je m'y sens toujours aussi bien. Observateur du monde qui m'entoure et passionné de dessin, j'ai orienté mes études vers le domaine artistique.
             </p>
             <br />
             <p>
-              C'est à cette période que j'ai rencontré un voisin, qui est aussi un ami. Heureux et épanoui, il m'a fait découvrir le Reiki, pour lequel j'ai voulu me former au plus vite. Toujours aussi curieux, j'ai découvert en même temps le Yi Jing, le livre des changements, que je consulte régulièrement en cas de doute. Pour moi, ce livre est un véritable puit de sagesse.
+              C'est à cette période que j'ai rencontré un voisin, qui est aussi un ami. Heureux et épanoui, il m'a fait découvrir le Reiki, pour lequel j'ai voulu me former au plus vite. Toujours aussi curieux, j'ai découvert en même temps le Yi Jing, le livre des changements, que je consulte régulièrement. Pour moi, ce livre est un véritable puit de sagesse.
             </p>
             <br />
             <p>
@@ -26,7 +26,7 @@ const AboutExplanation = () => {
             </p>
             <br />
             <p>
-              Confiné chez moi à cause d'une pandémie mondiale, j'ai trouvé des ressources pour apprendre une forme de musculation. Mon objectif n'était pas esthétique, mais, enrichi par mon apprentissage du Reiki, j'ai abordé cette nouvelle discipline sous l'angle de la santé. Pour moi, le bien-être physique est indissociable du bien-être mental. Être à l'écoute de son corps est primordial, car il nous révèle souvent ce qui nous importe réellement. Il nous aide à être plus proches de nos émotions, qui sont parfois perçues comme des obstacles, alors qu'elles peuvent souvent être des moteurs de changement.
+              Confiné chez moi à cause d'une pandémie, j'ai trouvé des ressources pour apprendre une forme de musculation. Mon objectif n'était pas esthétique, mais, enrichi par mon apprentissage du Reiki, j'ai abordé cette nouvelle discipline sous l'angle de la santé. Pour moi, le bien-être physique est indissociable du bien-être mental. Être à l'écoute de son corps est primordial, car il nous révèle souvent ce qui nous importe réellement. Il nous aide à être plus proches de nos émotions, qui sont parfois perçues comme des obstacles, alors qu'elles peuvent souvent être des moteurs de changement.
             </p>
             <br />
             <p>
@@ -37,6 +37,7 @@ const AboutExplanation = () => {
               Je fais les choses pour moi-même, avec sincérité, ce qui m'apporte beaucoup de plaisir. Cette sincérité a attiré des personnes autour de moi, qui m'ont demandé de partager mon expérience, ce qui nous a procuré beaucoup de joie. C'est ainsi que m'est venue l'idée d'offrir cette expérience à quiconque souhaiterait la vivre.
             </p>
           </div>
+          <Image src={`${PATH}/documents/img/shooting/pp_02.jpeg`} width={2000} height={2000} blurDataURL={`${PATH}/documents/img/fast-loading/lc-pp_02.jpeg`} alt="profil picture" />
         </li>
       </ul>
     </div>

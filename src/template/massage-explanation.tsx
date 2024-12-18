@@ -1,7 +1,13 @@
 import Image from "next/image";
 import { PATH } from "../../utils/constants";
+import { useEffect, useState } from "react";
 
 const MassageExplanation = () => {
+  const [domLoaded, setDomLoaded] = useState(false);
+
+  useEffect(() => {
+    setDomLoaded(true);
+  }, []);
   return (
     <div className="card">
       <ul className="list">
@@ -31,13 +37,22 @@ const MassageExplanation = () => {
         <p>Pour une 2h de massage <b>: 200€</b></p>
         <br />
       </div>
-      <div className="flex-container">
+      <div className="flex-container list">
         <h2>Horaires</h2>
         <br />
         <p>Je suis disponible du <b>samedi au mardi</b>.</p>
         <p>Contacter moi pour plus d'information.</p>
         <br />
       </div>
+      <br />
+      <div className="flex-container">
+        {domLoaded && (
+          <a className="link" href="mailto:benyreiki@mail.be">
+            <button>Faites une demande de réservation par mail</button>
+          </a>
+        )}
+      </div>
+      <br />
     </div>
   )
 }

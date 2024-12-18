@@ -15,16 +15,16 @@ const Navbar = () => {
       <div className="flex-container-navbar right-navbar">
         <div className="index-grid container">
           <a className="link" href={`${PATH}/`}>
-            <button className={pathname === "/" ? "active-button" : ""}>accueil</button>
+            <button className={pathname === "/" ? "active-button" : ""}>Accueil</button>
           </a>
           <a className="link" href={`${PATH}/massage`}>
-            <button className={pathname === "/massage" ? "active-button" : ""} >massage</button>
+            <button className={pathname === "/massage" ? "active-button" : ""} >Tarifs</button>
           </a>
           <a className="link" href={`${PATH}/gallery`}>
-            <button className={pathname === "/gallery" ? "active-button" : ""} >gallery</button>
+            <button className={pathname === "/gallery" ? "active-button" : ""} >Galerie</button>
           </a>
           <a className="link" href={`${PATH}/about`}>
-            <button className={pathname === "/about" ? "active-button" : ""} >about</button>
+            <button className={pathname === "/about" ? "active-button" : ""} >À propos</button>
           </a>
         </div>
       </div>

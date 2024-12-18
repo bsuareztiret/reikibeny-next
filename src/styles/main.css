@@ -6,13 +6,15 @@
   --dark-s: #2a9d8f;
   --dark-m: #c8bf19;
 
-  --ff-primary: "Andale Mono", sans-serif;
-  --ff-accent: "Helvetica Neue", sans-serif;
+  --ff-primary: "Noto Sans Mono", sans-serif;
+  --ff-accent: "Funnel Display", sans-serif;
 
   --duration: 20s;
   --delay: 0s;
   --loops: infinite;
   --direction: normal;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 *,
@@ -36,7 +38,8 @@ p {
   margin: 0;
 }
 
-h1 {
+h1,
+h2 {
   /* color: var(--dark-m); */
   font-family: var(--ff-accent);
   font-weight: 900;
@@ -52,6 +55,10 @@ img {
   background-size: contain;
   shape-margin: 0.75em;
   border-radius: 2%;
+}
+
+footer {
+  font-size: 0.95rem;
 }
 
 button {

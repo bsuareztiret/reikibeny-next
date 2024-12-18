@@ -9,6 +9,10 @@ export default function Document() {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       {/* CHOISIR L'IMAGE DE L'ONGLET \||/ */}
       <link rel="icon" href="/favicon.ico" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet" />
       <body>
         <Main />
         <NextScript />
