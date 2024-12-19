@@ -6,7 +6,7 @@ const WhatIsReiki = () => {
     <div className="card">
       <ul className="list">
         <li className="split">
-          <Image src={`${PATH}/documents/img/shooting/ab_02.jpeg`} width={2000} height={2000} blurDataURL={`${PATH}/documents/img/fast-loading/lc-ab_02.jpeg`} alt="profil picture" />
+          <Image src={`${PATH}/documents/img/shooting/ab_04.jpeg`} width={2000} height={2000} placeholder="blur" blurDataURL={`${PATH}/documents/img/fast-loading/lc-ab_04.jpeg`} alt="profil picture" />
           <div className="flex-container">
             <h2>Qu'est-ce que le Reiki</h2>
             <p>

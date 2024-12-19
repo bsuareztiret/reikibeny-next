@@ -6,7 +6,7 @@ const OnTable = () => {
     <div className="card">
       <ul className="list">
         <li className="split">
-          <Image src={`${PATH}/documents/img/shooting/ab_01.jpeg`} width={2500} height={3800} blurDataURL={`${PATH}/documents/img/fast-loading/lc-ab_01.jpeg`} alt="profil picture" />
+          <Image src={`${PATH}/documents/img/shooting/ab_01.jpeg`} width={2500} height={3800} placeholder="blur" blurDataURL={`${PATH}/documents/img/fast-loading/lc-ab_01.jpeg`} alt="profil picture" />
           <div className="flex-container">
             <h2>À table</h2>
             <p>

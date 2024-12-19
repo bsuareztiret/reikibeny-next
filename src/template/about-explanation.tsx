@@ -6,7 +6,7 @@ const AboutExplanation = () => {
     <div className="card">
       <ul className="list">
         <li className="split">
-          {/* <Image src={`${PATH}/documents/img/shooting/pp_01.png`} width={2000} height={2000} blurDataURL={`${PATH}/documents/img/fast-loading/lc-pp_01.png`} alt="profil picture" /> */}
+          <Image src={`${PATH}/documents/img/shooting/pp_02.jpeg`} width={2000} height={2000} placeholder="blur" blurDataURL={`${PATH}/documents/img/fast-loading/lc-pp_02.jpeg`} alt="profil picture" />
           <div className="flex-container">
             <h2>Mon parcours</h2>
             <p>
@@ -37,7 +37,6 @@ const AboutExplanation = () => {
               Je fais les choses pour moi-même, avec sincérité, ce qui m'apporte beaucoup de plaisir. Cette sincérité a attiré des personnes autour de moi, qui m'ont demandé de partager mon expérience, ce qui nous a procuré beaucoup de joie. C'est ainsi que m'est venue l'idée d'offrir cette expérience à quiconque souhaiterait la vivre.
             </p>
           </div>
-          <Image src={`${PATH}/documents/img/shooting/pp_02.jpeg`} width={2000} height={2000} blurDataURL={`${PATH}/documents/img/fast-loading/lc-pp_02.jpeg`} alt="profil picture" />
         </li>
       </ul>
     </div>

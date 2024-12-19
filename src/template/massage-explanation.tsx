@@ -12,7 +12,7 @@ const MassageExplanation = () => {
     <div className="card">
       <ul className="list">
         <li className="split">
-          <Image src={`${PATH}/documents/img/shooting/pmr_02.JPG`} width={2000} height={2000} blurDataURL={`${PATH}/documents/img/fast-loading/lc-pmr_02.JPG`} alt="hand massage picture" />
+          <Image src={`${PATH}/documents/img/shooting/ab_02.jpeg`} width={2000} height={2000} placeholder="blur" blurDataURL={`${PATH}/documents/img/fast-loading/lc-ab_02.jpeg`} alt="hand massage picture" />
           <div className="flex-container">
             <h2>Massage-Reiki déroulement d'une séance</h2>
             <br />
@@ -29,6 +29,7 @@ const MassageExplanation = () => {
         <h2>Tarifs</h2>
         <br />
         <h3>À votre domicile</h3>
+        <p>J'exerce dans la région de Bruxelles</p>
         <p>Pour 1h de massage <b>: 140€</b></p>
         <p>Pour 2h de massage <b>: 230€</b></p>
         <br />

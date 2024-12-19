@@ -12,6 +12,7 @@ const Index = () => {
         <Navbar />
       </div>
       <div className="index-grid-choose">
+        <h1>{process.env.NEXT_PUBLIC_ENVIRONMENT}</h1>
         <Header />
       </div>
       <div className="index-grid-way">
