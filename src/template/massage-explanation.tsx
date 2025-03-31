@@ -18,7 +18,7 @@ const MassageExplanation = () => {
             <br />
             <h3 className="right">30min - L'accueil :</h3><p>Chaque séance débute par un moment d’échange où vous partagez vos attentes, vos éventuelles tensions, ou simplement vos besoins du moment.</p>
             <br />
-            <h3 className="right">60min - Le massage :</h3><p> Le praticien s'appuie sur son expérience en Reiki et sa compréhension de l'équilibre corps-esprit pour adapter ses gestes.</p>
+            <h3 className="right">60/120min - Le massage :</h3><p> Le praticien s'appuie sur son expérience en Reiki et sa compréhension de l'équilibre corps-esprit pour adapter ses gestes.</p>
             <br />
             <h3 className="right">30min - La clotûre :</h3><p> À la fin de la séance, un temps est réservé pour revenir doucement à vous, avec éventuellement un échange pour approfondir les bienfaits du massage.</p>
             <br />
@@ -30,12 +30,12 @@ const MassageExplanation = () => {
         <br />
         <h3>À votre domicile</h3>
         <p>J'exerce dans la région de Bruxelles</p>
-        <p>Pour 1h de massage <b>: 140€</b></p>
-        <p>Pour 2h de massage <b>: 230€</b></p>
+        <p>Pour 1h de massage <b>: 100€</b></p>
+        <p>Pour 2h de massage <b>: 180€</b></p>
         <br />
         <h3>À mon domicile</h3>
-        <p>Pour une 1h de massage <b>: 100€</b></p>
-        <p>Pour une 2h de massage <b>: 200€</b></p>
+        <p>Pour une 1h de massage <b>: 80€</b></p>
+        <p>Pour une 2h de massage <b>: 140€</b></p>
         <br />
       </div>
       <div className="flex-container list">
