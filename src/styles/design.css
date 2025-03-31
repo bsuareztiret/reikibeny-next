@@ -78,7 +78,7 @@
 .flex-container-navbar {
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   padding-top: 1em;
   padding-bottom: 1em;
