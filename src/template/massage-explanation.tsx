@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { PATH } from "../../utils/constants";
+import { MAIL, PATH } from "../../utils/constants";
 import { useEffect, useState } from "react";
 
 const MassageExplanation = () => {
@@ -30,12 +30,12 @@ const MassageExplanation = () => {
         <br />
         <h3>À votre domicile</h3>
         <p>J'exerce dans la région de Bruxelles</p>
-        <p>Pour 1h de massage <b>: 100€</b></p>
-        <p>Pour 2h de massage <b>: 180€</b></p>
+        <p>Pour 1h de massage <b>: 90€</b></p>
+        <p>Pour 1h30 de massage <b>: 140€</b></p>
         <br />
         <h3>À mon domicile</h3>
-        <p>Pour une 1h de massage <b>: 80€</b></p>
-        <p>Pour une 2h de massage <b>: 140€</b></p>
+        <p>Pour une 1h de massage <b>: 70€</b></p>
+        <p>Pour une 1h30 de massage <b>: 100€</b></p>
         <br />
       </div>
       <div className="flex-container list">
@@ -48,7 +48,7 @@ const MassageExplanation = () => {
       <br />
       <div className="flex-container">
         {domLoaded && (
-          <a className="link" href="mailto:benyreiki@mail.be">
+          <a className="link" href={MAIL}>
             <button>Faites une demande de réservation par mail</button>
           </a>
         )}

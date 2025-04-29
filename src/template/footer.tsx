@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { PATH } from "../../utils/constants";
+import { MAIL, PATH } from "../../utils/constants";
 
 const Footer = () => {
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
       </div>
       <p>J'exerce dans la région de Bruxelles.</p>
       <p>Vous pouvez me suivre sur instagram: <a href="https://www.instagram.com/reikibeny/">ReikiBeny</a>.</p>
-      <p>Vous pouvez me contacter par mail: <a href="mailto:benyreiki@mail.be">ici</a>.</p>
+      <p>Vous pouvez me contacter par mail: <a href={MAIL}>ici</a>.</p>
     </footer>
   )
 }
