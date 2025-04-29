@@ -10,7 +10,7 @@ const Footer = () => {
       </div>
       <p>J'exerce dans la région de Bruxelles.</p>
       <p>Vous pouvez me suivre sur instagram: <a href="https://www.instagram.com/reikibeny/">ReikiBeny</a>.</p>
-      <p>Vous pouvez me contacter par mail: <a href={MAIL}>ici</a>.</p>
+      <p>Vous pouvez me contacter par mail: <a href={`mailto:${MAIL}`}>ici</a>.</p>
     </footer>
   )
 }
