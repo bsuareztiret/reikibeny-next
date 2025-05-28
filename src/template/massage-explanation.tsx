@@ -36,12 +36,12 @@ const MassageExplanation = () => {
       <div className="flex-container">
         {domLoaded && (
           <a className="link" href={`mailto:${MAIL}`}>
-            <button>Réserver une séance</button>
+            <button>Réserver par mail</button>
           </a>
         )}
         {domLoaded && (
           <a className="link" href={`tel:${PHONE}`}>
-            <button>Par téléhone</button>
+            <button>Réserver par téléhone</button>
           </a>
         )}
       </div>
