@@ -3,7 +3,7 @@ import { PATH } from "../../utils/constants";
 
 const Approach = () => {
   return (
-    <div className="card">
+    <div>
       <ul className="list">
         <li className="split">
           <Image src={`${PATH}/documents/img/shooting/ab_03.jpeg`} width={2000} height={2000} placeholder="blur" blurDataURL={`${PATH}/documents/img/fast-loading/lc-ab_03.jpeg`} alt="profil picture" />

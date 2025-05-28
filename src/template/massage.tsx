@@ -13,7 +13,7 @@ const Massage = () => {
 
   return (
     <a className="link" href={`${PATH}/massage`}>
-      <div className="card">
+      <div>
         <ul className="list">
           <li className="split">
             <Image src={`${PATH}/documents/img/shooting/ab_02.jpeg`} width={2000} height={2000} placeholder="blur" blurDataURL={`${PATH}/documents/img/fast-loading/lc-ab_02.jpeg`} alt="hand massage picture" />

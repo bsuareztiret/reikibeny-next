@@ -3,7 +3,7 @@ import { PATH } from "../../utils/constants";
 
 const GalleryExplanation = () => {
   return (
-    <div className="card">
+    <div>
       <h2>Galerie</h2>
       <div className="gallery">
         <div className="gallery-item"><Image src={`${PATH}/documents/img/shooting/pm_02.JPG`} width={2000} height={2000} placeholder="blur" blurDataURL={`${PATH}/documents/img/fast-loading/lc-pm_02.JPG`} alt="knee massage" /></div>

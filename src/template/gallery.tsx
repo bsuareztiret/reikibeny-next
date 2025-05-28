@@ -4,7 +4,7 @@ import { PATH } from "../../utils/constants";
 const Gallery = () => {
   return (
     <a className="link" href={`${PATH}/gallery`}>
-      <div className="card">
+      <div>
         <h2>Galerie</h2>
         <div className="gallery">
           <div className="gallery-item"><Image src={`${PATH}/documents/img/shooting/pm_05.JPG`} width={2000} height={2000} placeholder="blur" blurDataURL={`${PATH}/documents/img/fast-loading/lc-pm_05.JPG`} alt="foot massage" /></div>
