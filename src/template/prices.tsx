@@ -8,20 +8,20 @@ const Prices = () => {
         <thead>
           <tr>
             <th>Durée</th>
-            <th>Habillé</th>
+            <th>Reiki / Fascia</th>
             <th>À l’huile</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td data-label="Durée">60 min</td>
-            <td data-label="Massage habillé">55 €</td>
-            <td data-label="Massage à l’huile">60 €</td>
+            <td data-label="Massage habillé">60 €</td>
+            <td data-label="Massage à l’huile">65 €</td>
           </tr>
           <tr>
             <td data-label="Durée">90 min</td>
-            <td data-label="Massage habillé">70 €</td>
-            <td data-label="Massage à l’huile">75 €</td>
+            <td data-label="Massage habillé">75 €</td>
+            <td data-label="Massage à l’huile">80 €</td>
           </tr>
         </tbody>
       </table>

@@ -6,7 +6,7 @@ const Approach = () => {
     <div>
       <ul className="list">
         <li className="split">
-          <Image src={`${PATH}/documents/img/shooting/ab_03.jpeg`} width={2000} height={2000} placeholder="blur" blurDataURL={`${PATH}/documents/img/fast-loading/lc-ab_03.jpeg`} alt="profil picture" />
+          <Image src={`${PATH}/documents/img/shooting/AP_07.jpeg`} width={2000} height={2000} placeholder="blur" blurDataURL={`${PATH}/documents/img/fast-loading/lc-AP_07.jpeg`} alt="profil picture" />
           <div className="flex-container">
             <h2>Mon approche</h2>
             <p>

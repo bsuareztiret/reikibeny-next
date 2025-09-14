@@ -4,6 +4,7 @@ import Gallery from "@/template/gallery";
 import About from "@/template/about";
 import Footer from "@/template/footer";
 import Navbar from "@/template/navbar";
+import Landing from "@/template/landing";
 
 const Index = () => {
   return (
@@ -16,9 +17,10 @@ const Index = () => {
         <Header />
       </div>
       <div className="index-grid-way">
-        <Massage />
-        <Gallery />
-        <About />
+        <Landing />
+        {/* <Massage /> */}
+        {/* <Gallery /> */}
+        {/* <About /> */}
       </div>
       <div className="index-grid-phylo">
         <Footer />

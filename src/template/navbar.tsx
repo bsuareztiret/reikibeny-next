@@ -18,11 +18,11 @@ const Navbar = () => {
             <button className={pathname === "/" ? "active-button" : ""}>Accueil</button>
           </a>
           <a className="link" href={`${PATH}/massage`}>
-            <button className={pathname === "/massage" ? "active-button" : ""} >Tarifs</button>
+            <button className={pathname === "/massage" ? "active-button" : ""} >Mes services</button>
           </a>
-          <a className="link" href={`${PATH}/gallery`}>
+          {/* <a className="link" href={`${PATH}/gallery`}>
             <button className={pathname === "/gallery" ? "active-button" : ""} >Galerie</button>
-          </a>
+          </a> */}
           <a className="link" href={`${PATH}/about`}>
             <button className={pathname === "/about" ? "active-button" : ""} >À propos</button>
           </a>
