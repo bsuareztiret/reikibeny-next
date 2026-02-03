@@ -14,11 +14,11 @@ const Prices = () => {
         <tbody>
           <tr>
             <td data-label="Durée">60 min</td>
-            <td data-label="Reiki / Fascia / À l’huile">60 €</td>
+            <td data-label="Reiki / Fascia / À l’huile">80 €</td>
           </tr>
           <tr>
             <td data-label="Durée">90 min</td>
-            <td data-label="Reiki / Fascia / À l’huile">80 €</td>
+            <td data-label="Reiki / Fascia / À l’huile">100 €</td>
           </tr>
         </tbody>
       </table>
