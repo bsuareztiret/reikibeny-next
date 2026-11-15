@@ -1,0 +1,354 @@
+
+.landing {
+  --green: #29382f;
+  --green-light: #536b59;
+  --sage: #dce3d9;
+  --cream: #f5f2eb;
+  --text: #303831;
+  --muted: #747970;
+
+  width: 100%;
+  color: var(--text);
+  background: var(--cream);
+  overflow: hidden;
+}
+
+.landing * {
+  box-sizing: border-box;
+}
+
+.hero {
+  min-height: 680px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 100px 9%;
+  color: white;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(24, 38, 30, 0.92) 0%,
+      rgba(24, 38, 30, 0.68) 55%,
+      rgba(24, 38, 30, 0.15) 100%
+    ),
+    url("/documents/img/shooting/fitness-hero.jpg")
+    center 35% / cover no-repeat;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(20, 31, 24, 0.3),
+    transparent 50%
+  );
+  pointer-events: none;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+}
+
+.eyebrow {
+  display: block;
+  color: var(--green-light);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.19em;
+  margin-bottom: 22px;
+}
+
+.hero .eyebrow {
+    /*color: #c6d2c3;*/
+  color: var(--color-green-sage);
+}
+
+.hero h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(3rem, 6vw, 5.6rem);
+  line-height: 1.08;
+  font-weight: 400;
+  letter-spacing: -0.045em;
+  margin: 0 0 25px;
+}
+
+.hero h1 span {
+    /*color: #c2d0bf;*/
+    color: var(--color-green-sage);
+  font-style: italic;
+}
+
+.heroContent > p {
+  max-width: 490px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 35px;
+}
+
+.primaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 17px 25px;
+  border: 1px solid var(--green);
+  background: var(--green);
+  color: white;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  transition: 0.25s ease;
+}
+
+.primaryButton:hover {
+    /*background: #465d4b;*/
+  background: var(--color-green-light);
+  /*border-color: #465d4b;*/
+  border-color: var(--color-green-light);
+  transform: translateY(-2px);
+}
+
+.hero .primaryButton {
+  background: var(--cream);
+  border-color: var(--cream);
+  color: var(--green);
+}
+
+.hero .primaryButton:hover {
+  background: white;
+}
+
+.heroScroll {
+  position: absolute;
+  bottom: 35px;
+  left: 9%;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  /*color: #e1e6df;*/
+  color: var(--color-border);
+  font-size: 0.65rem;
+  letter-spacing: 0.16em;
+}
+
+.introduction {
+  max-width: 800px;
+  margin: auto;
+  padding: 110px 25px 70px;
+  text-align: center;
+}
+
+.introduction h2,
+.philosophyContent h2,
+.contact h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  line-height: 1.2;
+  font-weight: 400;
+  margin: 0 0 20px;
+}
+
+.introduction p,
+.philosophyContent p,
+.contact p {
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.9;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 35px;
+  padding: 20px 9% 110px;
+}
+
+.serviceCard {
+  background: white;
+}
+
+.serviceImage {
+  position: relative;
+  height: 430px;
+  overflow: hidden;
+}
+
+.serviceImage img {
+  transition: transform 0.7s ease;
+}
+
+.serviceCard:hover .serviceImage img {
+  transform: scale(1.045);
+}
+
+.serviceNumber {
+  position: absolute;
+  top: 22px;
+  left: 25px;
+  color: white;
+  font-family: Georgia, serif;
+  font-size: 1.4rem;
+  z-index: 2;
+}
+
+.newLabel {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 9px 13px;
+  background: var(--sage);
+  color: var(--green);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  z-index: 2;
+}
+
+.serviceContent {
+  padding: 38px 35px 42px;
+}
+
+.serviceContent h3 {
+  font-family: Georgia, serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+  margin: 0 0 15px;
+}
+
+.serviceContent p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  min-height: 85px;
+}
+
+.textLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 18px;
+  color: var(--green);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 700;
+  /*border-bottom: 1px solid #b7c2b6;*/
+  border-bottom: 1px solid var(--color-green-sage);
+  padding-bottom: 8px;
+  transition: gap 0.2s ease;
+}
+
+.textLink:hover {
+  gap: 23px;
+}
+
+.philosophy {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--sage);
+}
+
+.philosophyImage {
+  position: relative;
+  min-height: 560px;
+}
+
+.philosophyContent {
+  align-self: center;
+  padding: 80px 12%;
+}
+
+.philosophyContent h2 {
+  color: var(--green);
+}
+
+.philosophyContent p {
+  margin: 25px 0;
+}
+
+.contact {
+  padding: 110px 25px;
+  background: var(--green);
+  color: white;
+  text-align: center;
+}
+
+.contact .eyebrow {
+    /*color: #c5d3c2;*/
+  color: var(--color-border);
+}
+
+.contact h2 {
+  max-width: 700px;
+  margin: 0 auto 20px;
+}
+
+.contact p {
+    /*color: #d4ddd3;*/
+  color: var(--color-green-sage);
+  margin: 0 auto 35px;
+}
+
+.contact .primaryButton {
+  background: var(--cream);
+  border-color: var(--cream);
+  color: var(--green);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 620px;
+    padding: 80px 7%;
+    background-position: 60% center;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.8rem, 11vw, 4.2rem);
+  }
+
+  .heroContent > p {
+    font-size: 0.95rem;
+  }
+
+  .introduction {
+    padding: 75px 25px 45px;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+    padding: 15px 6% 75px;
+    gap: 25px;
+  }
+
+  .serviceImage {
+    height: 330px;
+  }
+
+  .serviceContent {
+    padding: 30px 25px;
+  }
+
+  .serviceContent p {
+    min-height: 0;
+  }
+
+  .philosophy {
+    grid-template-columns: 1fr;
+  }
+
+  .philosophyImage {
+    min-height: 390px;
+  }
+
+  .philosophyContent {
+    padding: 65px 8%;
+  }
+
+  .contact {
+    padding: 80px 7%;
+  }
+}

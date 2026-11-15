@@ -1,10 +1,35 @@
 :root {
-  --light-s: #e9c46a;
-  --light-m: #792222;
-  --light-l: #470f0f;
 
-  --dark-s: #2a9d8f;
-  --dark-m: #c8bf19;
+    /* =================================
+       TYPOGRAPHIE
+    ================================= */
+
+    --font-heading: Georgia, serif;
+    --font-body: Arial, sans-serif;
+
+    /* =================================
+       PALETTE PRINCIPALE
+    ================================= */
+
+    --color-green-deep: #29382F;
+    --color-green-light: #536B59;
+    --color-green-sage: #DCE3D9;
+    --color-cream: #F8F6F0;
+    --color-accent: #D9C6A5;
+
+    /* =================================
+       TEXTES
+    ================================= */
+
+    --color-text-main: #26332E;
+    --color-text-secondary: #777D76;
+
+    /* =================================
+       STRUCTURE
+    ================================= */
+
+    --color-border: #E2E7DF;
+
 
   --ff-primary: "Noto Sans Mono", sans-serif;
   --ff-accent: "Funnel Display", sans-serif;
@@ -13,7 +38,7 @@
   --delay: 0s;
   --loops: infinite;
   --direction: normal;
-  max-width: 1200px;
+  /*max-width: 1200px;*/
   margin: 0 auto;
 }
 
@@ -28,7 +53,7 @@ body {
   font-weight: 400;
   font-size: 1.3125rem;
   line-height: 1.6;
-  background-color: rgb(250, 250, 250);
+  background-color: var(--color-cream);
 }
 
 body,

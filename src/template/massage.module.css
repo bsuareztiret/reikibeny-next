@@ -1,0 +1,465 @@
+
+.page {
+  --green: #29382f;
+  --green-light: #536b59;
+  --sage: #dce3d9;
+  --cream: #f5f2eb;
+  --text: #303831;
+  --muted: #747970;
+
+  color: var(--text);
+  background: var(--cream);
+  overflow: hidden;
+}
+
+.page * {
+  box-sizing: border-box;
+}
+
+.hero {
+  min-height: 620px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 100px 9%;
+  color: white;
+  background: var(--green);
+}
+
+.heroImage,
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+}
+
+.heroOverlay {
+  background: linear-gradient(
+    90deg,
+    rgba(27, 39, 31, 0.91),
+    rgba(27, 39, 31, 0.55) 60%,
+    rgba(27, 39, 31, 0.15)
+  );
+  z-index: 1;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  max-width: 720px;
+}
+
+.heroContent > span {
+    /*color: #c6d2c3;*/
+  color: var(--color-green-sage);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.heroContent h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(3.2rem, 6vw, 5.3rem);
+  line-height: 1.1;
+  font-weight: 400;
+  margin: 30px 0;
+}
+
+.heroContent h1 em {
+  /*color: #c6d2c3;*/
+  color: var(--color-green-sage);
+}
+
+.heroContent p {
+  max-width: 490px;
+  /*color: #e1e6df;*/
+  color: var(--color-border);
+  font-size: 1rem;
+  line-height: 1.9;
+  margin-bottom: 35px;
+}
+
+.button,
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 16px 24px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.button {
+  background: var(--green);
+  color: white;
+  border: 1px solid var(--green);
+}
+
+.hero .button,
+.contact .button {
+  background: var(--cream);
+  color: var(--green);
+  border-color: var(--cream);
+}
+
+.button:hover,
+.secondaryButton:hover {
+  transform: translateY(-3px);
+}
+
+.intro {
+  max-width: 850px;
+  padding: 110px 25px;
+  margin: auto;
+  text-align: center;
+}
+
+.label {
+  display: block;
+  color: var(--green-light);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  margin-bottom: 20px;
+}
+
+.intro h2,
+.sectionHeading h2,
+.pricingIntro h2,
+.availability h2,
+.contact h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(2.2rem, 4vw, 3.3rem);
+  line-height: 1.2;
+  font-weight: 400;
+  margin: 0 0 25px;
+}
+
+.intro p {
+  color: var(--muted);
+  font-size: 0.96rem;
+  line-height: 1.9;
+}
+
+.treatments {
+  padding: 95px 9% 110px;
+  /*background: #ebe9e1;*/
+  background: var(--color-border);
+}
+
+.sectionHeading {
+  max-width: 750px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.treatmentGrid {
+  max-width: 1150px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.treatmentCard {
+  min-height: 300px;
+  padding: 35px 30px;
+  /*background: #f9f8f3;*/
+  background: var(--color-cream);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 45px;
+  /*border-bottom: 3px solid #c6d2c3;*/
+  border-bottom: 3px solid var(--color-green-sage);
+  transition: transform 0.3s ease;
+}
+
+.treatmentCard:hover {
+  transform: translateY(-5px);
+}
+
+.number {
+  color: var(--green-light);
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+}
+
+.subtitle {
+  color: var(--green-light);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.treatmentCard h3 {
+  font-family: Georgia, serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 12px 0;
+}
+
+.treatmentCard p {
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.8;
+}
+
+.personalized {
+  max-width: 800px;
+  margin: 60px auto 0;
+  padding: 35px;
+  background: var(--sage);
+  text-align: center;
+}
+
+.personalized > span {
+  color: var(--green);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.personalized p {
+    /*color: #59635a;*/
+  color: var(--color-text-secondary);
+  font-size: 0.93rem;
+  line-height: 1.8;
+  margin: 15px 0 0;
+}
+
+.pricing {
+  padding: 110px 8%;
+}
+
+.pricingIntro {
+  max-width: 650px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.pricingIntro p {
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.priceCards {
+  max-width: 850px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.priceCard {
+  padding: 45px 35px;
+  text-align: center;
+  /*background: white;*/
+  background: var(--color-cream);
+  /*border: 1px solid #e6e6df;*/
+  border: 1px solid var(--color-border);
+}
+
+.priceCard > span {
+  color: var(--green-light);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+.priceCard h3 {
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 25px 0 10px;
+}
+
+.price {
+  color: var(--green);
+  font-family: Georgia, serif;
+  font-size: 3.3rem;
+  margin: 10px 0 20px;
+}
+
+.priceCard p {
+  color: var(--muted);
+  font-size: 0.87rem;
+  line-height: 1.8;
+}
+
+.featured {
+  background: var(--sage);
+  border-color: var(--sage);
+}
+
+.availability {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  gap: 60px;
+  align-items: center;
+  padding: 90px 12%;
+  /*background: #e8e9df;*/
+  background: var(--color-border);
+}
+
+.availability > div:first-child {
+  max-width: 550px;
+}
+
+.availability p {
+  color: var(--muted);
+  line-height: 1.9;
+  margin-top: 20px;
+}
+
+.availabilityMark {
+  min-height: 270px;
+  padding: 35px;
+  background: var(--green);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.availabilityMark span {
+    /*color: #c6d2c3;*/
+  color: var(--color-green-sage);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+}
+
+.availabilityMark strong {
+  font-family: Georgia, serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.contact {
+  padding: 110px 25px;
+  text-align: center;
+  color: white;
+  background: var(--green);
+}
+
+.contact .label {
+  /*color: #c6d2c3;*/
+  color: var(--color-green-sage);
+}
+
+.contact h2 {
+  max-width: 750px;
+  margin: 0 auto 20px;
+}
+
+.contact > p {
+  max-width: 550px;
+  margin: 0 auto 35px;
+  /*color: #d4ddd3;*/
+  color: var(--color-green-sage);
+  line-height: 1.9;
+}
+
+.contactActions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.secondaryButton {
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.backLink {
+  display: block;
+  width: fit-content;
+  margin: 55px auto 0;
+  /*color: #d4ddd3;*/
+  color: var(--color-green-sage);
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.backLink:hover {
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .treatmentGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .availability {
+    padding: 75px 8%;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 650px) {
+  .hero {
+    min-height: 570px;
+    padding: 75px 7%;
+  }
+
+  .heroContent h1 {
+    font-size: clamp(2.8rem, 10vw, 4rem);
+  }
+
+  .intro {
+    padding: 75px 7%;
+  }
+
+  .treatments {
+    padding: 75px 6%;
+  }
+
+  .treatmentGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .treatmentCard {
+    min-height: 240px;
+    padding: 28px;
+  }
+
+  .personalized {
+    padding: 28px 20px;
+  }
+
+  .pricing {
+    padding: 75px 6%;
+  }
+
+  .priceCards {
+    grid-template-columns: 1fr;
+  }
+
+  .availability {
+    grid-template-columns: 1fr;
+    padding: 65px 7%;
+  }
+
+  .availabilityMark {
+    min-height: 220px;
+  }
+
+  .contact {
+    padding: 80px 7%;
+  }
+
+  .contactActions {
+    flex-direction: column;
+  }
+
+  .contactActions a {
+    width: 100%;
+  }
+}

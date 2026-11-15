@@ -1,0 +1,216 @@
+.aboutPage {
+  background: var(--color-cream);
+  color: var(--color-text-main);
+}
+
+.hero {
+  padding: 110px 24px 100px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 22px;
+  color: var(--color-green-light);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.hero h1,
+.sectionIntro h2,
+.philosophy h2,
+.closing h2 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.hero h1 {
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  color: var(--color-green-deep);
+  margin: 0 0 28px;
+}
+
+.heroText {
+  max-width: 650px;
+  margin: 0 auto;
+  color: var(--color-text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.story {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.8fr) minmax(300px, 1.2fr);
+  gap: 80px;
+  padding: 100px max(24px, calc((100% - 1100px) / 2));
+  background: white;
+}
+
+.sectionIntro h2 {
+  color: var(--color-green-deep);
+  font-size: clamp(2.2rem, 4vw, 3.3rem);
+  margin: 0;
+}
+
+.storyContent {
+  max-width: 650px;
+}
+
+.storyContent p,
+.philosophyText p,
+.sectionIntro > p,
+.approachCard p,
+.closing p {
+  color: var(--color-text-secondary);
+  line-height: 1.85;
+  font-size: 1rem;
+}
+
+.storyContent p:first-child {
+  margin-top: 0;
+}
+
+.storyContent blockquote {
+  margin: 32px 0;
+  padding: 8px 0 8px 24px;
+  border-left: 3px solid var(--color-accent);
+  color: var(--color-green-deep);
+  font-family: var(--font-heading);
+  font-size: 1.55rem;
+  line-height: 1.5;
+}
+
+.philosophy {
+  padding: 110px 24px;
+  background: var(--color-green-deep);
+  color: white;
+}
+
+.philosophyText {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.philosophy .eyebrow {
+  color: var(--color-accent);
+}
+
+.philosophy h2 {
+  font-size: clamp(2.3rem, 4.5vw, 3.8rem);
+  margin: 0 0 28px;
+}
+
+.philosophyText p {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.approach {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 110px 24px;
+}
+
+.approach .sectionIntro {
+  max-width: 760px;
+  margin-bottom: 55px;
+}
+
+.approach .sectionIntro > p {
+  max-width: 650px;
+  margin-top: 24px;
+}
+
+.approachGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.approachCard {
+  padding: 42px;
+  background: white;
+  border: 1px solid var(--color-border);
+}
+
+.cardNumber {
+  display: block;
+  margin-bottom: 28px;
+  color: var(--color-accent);
+  font-family: var(--font-heading);
+  font-size: 2rem;
+}
+
+.approachCard h3 {
+  margin: 0 0 20px;
+  color: var(--color-green-deep);
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.approachCard p {
+  margin-bottom: 18px;
+}
+
+.textLink {
+  display: inline-block;
+  margin-top: 14px;
+  color: var(--color-green-light);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-accent);
+  padding-bottom: 5px;
+}
+
+.textLink:hover {
+  color: var(--color-green-deep);
+}
+
+.closing {
+  padding: 100px 24px;
+  text-align: center;
+  background: var(--color-green-sage);
+}
+
+.closing h2 {
+  max-width: 700px;
+  margin: 0 auto 24px;
+  color: var(--color-green-deep);
+  font-size: clamp(2.3rem, 4.5vw, 3.6rem);
+}
+
+.closing p {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+@media (max-width: 760px) {
+  .hero {
+    padding: 80px 24px;
+  }
+
+  .story {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 75px 24px;
+  }
+
+  .philosophy,
+  .approach,
+  .closing {
+    padding: 75px 24px;
+  }
+
+  .approachGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .approachCard {
+    padding: 30px;
+  }
+}
