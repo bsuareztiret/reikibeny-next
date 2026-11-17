@@ -3,20 +3,59 @@
   color: var(--color-text-main);
 }
 
-.hero {
+/*.hero {
   padding: 110px 24px 100px;
   text-align: center;
   max-width: 900px;
   margin: 0 auto;
+}*/
+
+.hero {
+  min-height: 680px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 100px 9%;
+  color: white;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(24, 38, 30, 0.92) 0%,
+      rgba(24, 38, 30, 0.68) 55%,
+      rgba(24, 38, 30, 0.15) 100%
+    ),
+    url("/documents/img/shooting/AP_07.jpeg")
+    center 35% / cover no-repeat;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(20, 31, 24, 0.3),
+    transparent 50%
+  );
+  pointer-events: none;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
 }
 
 .eyebrow {
   display: inline-block;
   margin-bottom: 22px;
-  color: var(--color-green-light);
+  color: var(--color-cream);
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.16em;
+}
+
+.philosophy h2 {
+    color: var(--color-cream)
 }
 
 .hero h1,
@@ -30,14 +69,14 @@
 
 .hero h1 {
   font-size: clamp(2.8rem, 6vw, 5rem);
-  color: var(--color-green-deep);
+  color: var(--color-cream);
   margin: 0 0 28px;
 }
 
 .heroText {
   max-width: 650px;
   margin: 0 auto;
-  color: var(--color-text-secondary);
+  color: var(--color-cream);
   font-size: 1.1rem;
   line-height: 1.8;
 }
@@ -175,6 +214,18 @@
   padding: 100px 24px;
   text-align: center;
   background: var(--color-green-sage);
+  /*display: grid;
+  grid-template-columns: 1fr 1fr;*/
+}
+
+.closingImage {
+  position: relative;
+  min-height: 560px;
+}
+
+.closingContent {
+  align-self: center;
+  padding: 80px 12%;
 }
 
 .closing h2 {
@@ -200,14 +251,23 @@
     padding: 75px 24px;
   }
 
+  /*.closing {*/
   .philosophy,
-  .approach,
-  .closing {
+  .approach {
     padding: 75px 24px;
   }
 
-  .approachGrid {
+  .approachGrid,
+  .closing {
     grid-template-columns: 1fr;
+  }
+
+  .closingImage {
+    min-height: 390px;
+  }
+
+  .closingContent {
+    padding: 65px 8%;
   }
 
   .approachCard {

@@ -1,12 +1,8 @@
 
 .footer {
-  /*--footer-green: #29382f;
-  --footer-sage: #c6d2c3;*/
-
   padding: 70px 9% 0;
   /*background: #202d25; NICE*/
   background: var(--color-green-deep);
-  /*color: #f5f2eb;*/
   color: var(--color-cream);
 }
 
@@ -46,7 +42,7 @@
 }
 
 .brand small {
-  color: var(--footer-sage);
+  color: var(--color-green-sage);
   font-size: 0.6rem;
   letter-spacing: 0.2em;
 }
@@ -54,7 +50,6 @@
 .brandColumn > p {
   max-width: 340px;
   margin-top: 25px;
-  /*color: #bdc6bd;*/
   color: var(--color-green-sage);
   font-size: 0.88rem;
   line-height: 1.9;
@@ -76,7 +71,6 @@
 }
 
 .footerColumn a {
-  /*color: #bdc6bd;*/
   color: var(--color-green-sage);
   text-decoration: none;
   font-size: 0.85rem;
@@ -90,7 +84,7 @@
 
 .footerColumn a span {
   margin-right: 8px;
-  color: var(--footer-sage);
+  color: var(--color-green-sage);
 }
 
 .footerBottom {
@@ -102,7 +96,6 @@
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  /*color: #aab5aa;*/
   color: var(--color-accent);
   font-size: 0.72rem;
 }

@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
+import { PATH } from "../../utils/constants";
 
 import Navbar from "@/template/navbar";
 import Footer from "@/template/footer";
@@ -22,17 +24,21 @@ export default function About() {
 
       <main className={styles.aboutPage}>
         <section className={styles.hero}>
-          <span className={styles.eyebrow}>À PROPOS</span>
-          <h1>
-            Prendre soin de soi,
-            <br />
-            dans son ensemble.
-          </h1>
-          <p className={styles.heroText}>
-            Le bien-être ne se résume pas à une seule chose. Il passe par
-            l'écoute, le relâchement, le mouvement et l'attention que l'on
-            porte à son corps au quotidien.
-          </p>
+          <div className={styles.heroOverlay} />
+
+          <div className={styles.heroContent}>
+            <span className={styles.eyebrow}>À PROPOS</span>
+            <h1>
+              Prendre soin de soi,
+              <br />
+              dans son ensemble.
+            </h1>
+            <p className={styles.heroText}>
+              Le bien-être ne se résume pas à une seule chose. Il passe par
+              l'écoute, le relâchement, le mouvement et l'attention que l'on
+              porte à son corps au quotidien.
+              </p>
+          </div>
         </section>
 
         <section className={styles.story}>
@@ -148,13 +154,25 @@ export default function About() {
         </section>
 
         <section className={styles.closing}>
-          <span className={styles.eyebrow}>AVANT TOUT, UNE RENCONTRE</span>
-          <h2>Chacun avance à son rythme.</h2>
-          <p>
-            Il n'y a pas une seule bonne manière de prendre soin de soi.
-            L'essentiel est de trouver ce qui vous correspond, en respectant
-            vos besoins, vos envies et vos limites.
-          </p>
+          {/*<div className={styles.closingImage}>
+            <Image
+              src={`${PATH}/documents/img/shooting/AP_008.jpg`}
+              alt="Beny, profil"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              style={{ objectFit: "cover" }}
+            />
+          </div>*/}
+
+          {/*<div className={styles.closingContent}>*/}
+            <span className={styles.eyebrow}>AVANT TOUT, UNE RENCONTRE</span>
+            <h2>Chacun avance à son rythme.</h2>
+            <p>
+              Il n'y a pas une seule bonne manière de prendre soin de soi.
+              L'essentiel est de trouver ce qui vous correspond, en respectant
+              vos besoins, vos envies et vos limites.
+            </p>
+          {/*</div>*/}
         </section>
 
         <ContactCTA

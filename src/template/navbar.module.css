@@ -1,8 +1,5 @@
 
 .header {
-  --nav-green: #29382f;
-  --nav-sage: #dce3d9;
-
   position: sticky;
   top: 0;
   z-index: 100;
@@ -28,7 +25,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  color: var(--nav-green);
+  color: var(--color-green-deep);
   text-decoration: none;
   flex-shrink: 0;
 }
@@ -52,7 +49,6 @@
 }
 
 .brand small {
-    /*color: #778276;*/
   color: var(--color-text-secondary);
   font-size: 0.58rem;
   font-weight: 700;
@@ -69,7 +65,6 @@
 .navLink {
   position: relative;
   padding: 12px 0;
-  /*color: #596159;*/
   color: var(--color-green-light);
   text-decoration: none;
   font-size: 0.83rem;
@@ -84,13 +79,13 @@
   left: 0;
   width: 0;
   height: 1px;
-  background: var(--nav-green);
+  background: var(--color-green-deep);
   transition: width 0.25s ease;
 }
 
 .navLink:hover,
 .active {
-  color: var(--nav-green);
+  color: var(--color-green-deep);
 }
 
 .navLink:hover::after,
@@ -103,7 +98,7 @@
   align-items: center;
   gap: 15px;
   padding: 13px 19px;
-  background: var(--nav-green);
+  background: var(--color-green-deep);
   color: white;
   text-decoration: none;
   font-size: 0.8rem;
@@ -112,7 +107,6 @@
 }
 
 .contactButton:hover {
-    /*background: #465d4b;*/
   background: var(--color-green-light);
 }
 
@@ -120,7 +114,6 @@
   display: none;
   width: 42px;
   height: 42px;
-  /*border: 1px solid #d8ded6;*/
   border: 1px solid var(--color-green-sage);
   background: transparent;
   border-radius: 0;
@@ -133,7 +126,7 @@
   height: 2px;
   width: 100%;
   margin: 4px 0;
-  background: var(--nav-green);
+  background: var(--color-green-deep);
   transition: 0.2s ease;
 }
 
@@ -159,9 +152,7 @@
     align-items: stretch;
     gap: 0;
     padding: 15px 6% 25px;
-    /*background: #f9f7f1;*/
     background: var(--color-cream);
-    /*border-bottom: 1px solid #e2e4dc;*/
     border-bottom: 1px solid var(--color-border);
     box-shadow: 0 12px 20px rgba(25, 40, 30, 0.08);
   }
@@ -172,7 +163,6 @@
 
   .navLink {
     padding: 15px 0;
-    /*border-bottom: 1px solid #e8e9e3;*/
     border-bottom: 1px solid var(--color-border);
   }
 

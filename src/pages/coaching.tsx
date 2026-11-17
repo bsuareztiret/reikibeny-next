@@ -58,7 +58,7 @@ export default function Coaching() {
         <section className={styles.hero}>
           <div className={styles.heroImage}>
             <Image
-              src={`${PATH}/documents/img/shooting/fitness-hero.jpg`}
+              src={`${PATH}/documents/img/shooting/clubbell.jpg`}
               alt="Coaching sportif personnalisé"
               fill
               priority
@@ -175,7 +175,7 @@ export default function Coaching() {
 
           <div className={styles.locationImage}>
             <Image
-              src={`${PATH}/documents/img/shooting/coaching-session.jpg`}
+              src={`${PATH}/documents/img/shooting/macebell.jpg`}
               alt="Entraînement sportif individuel"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"

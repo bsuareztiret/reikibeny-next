@@ -1,6 +1,5 @@
 
 .page {
-    /*background: #f5f2eb;*/
   background: var(--color-cream);
   min-height: 100vh;
 }
@@ -13,12 +12,10 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  /*color: #303831;*/
   color: var(--color-text-main);
 }
 
 .contact > span {
-    /*color: #536b59;*/
   color: var(--color-green-light);
   font-size: 0.7rem;
   font-weight: 700;
@@ -34,13 +31,11 @@
 }
 
 .contact h1 em {
-  /*color: #536b59;*/
   color: var(--color-green-light);
 }
 
 .contact > p {
   max-width: 540px;
-  /*color: #747970;*/
   color: var(--color-text-secondary);
   line-height: 1.9;
 }
@@ -59,9 +54,7 @@
   align-items: center;
   gap: 18px;
   padding: 25px;
-  /*background: white;*/
   background: var(--color-cream);
-  /*color: #29382f;*/
   color: var(--color-green-deep);
   text-decoration: none;
   text-align: left;
@@ -86,7 +79,6 @@
 }
 
 .methods small {
-    /*color: #747970;*/
     color: var(--color-text-secondary);
   margin-top: 7px;
   line-height: 1.5;
@@ -94,7 +86,6 @@
 
 .back {
   margin-top: 55px;
-  /*color: #536b59;*/
   color: var(--color-green-light);
   text-decoration: none;
 }

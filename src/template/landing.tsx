@@ -94,7 +94,7 @@ const LandingXXX = () => {
               style={{ objectFit: "cover" }}
             />
             <span className={styles.serviceNumber}>02</span>
-            <span className={styles.newLabel}>NOUVEAU</span>
+            {/*<span className={styles.newLabel}>NOUVEAU</span>*/}
           </div>
 
           <div className={styles.serviceContent}>

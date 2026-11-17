@@ -1,20 +1,10 @@
 
 .page {
-  --green: #29382f;
-  --green-light: #536b59;
-  --sage: #dce3d9;
-  --cream: #f5f2eb;
-  --text: #303831;
-  --muted: #747970;
-
-  color: var(--text);
-  background: var(--cream);
-  overflow: hidden;
+  color: var(--color-text-main);
+  background: var(--color-cream);
+  /*overflow: hidden;*/
 }
 
-.page * {
-  box-sizing: border-box;
-}
 
 .hero {
   min-height: 620px;
@@ -23,7 +13,7 @@
   align-items: center;
   padding: 100px 9%;
   color: white;
-  background: var(--green);
+  background: var(--color-green-deep);
 }
 
 .heroImage,
@@ -49,7 +39,6 @@
 }
 
 .heroContent > span {
-    /*color: #c6d2c3;*/
   color: var(--color-green-sage);
   font-size: 0.72rem;
   font-weight: 700;
@@ -62,16 +51,15 @@
   line-height: 1.1;
   font-weight: 400;
   margin: 30px 0;
+  color: var(--color-cream)
 }
 
 .heroContent h1 em {
-  /*color: #c6d2c3;*/
   color: var(--color-green-sage);
 }
 
 .heroContent p {
   max-width: 490px;
-  /*color: #e1e6df;*/
   color: var(--color-border);
   font-size: 1rem;
   line-height: 1.9;
@@ -92,16 +80,16 @@
 }
 
 .button {
-  background: var(--green);
+  background: var(--color-green-deep);
   color: white;
-  border: 1px solid var(--green);
+  border: 1px solid var(--color-green-deep);
 }
 
 .hero .button,
 .contact .button {
-  background: var(--cream);
-  color: var(--green);
-  border-color: var(--cream);
+  background: var(--color-cream);
+  color: var(--color-green-deep);
+  border-color: var(--color-cream);
 }
 
 .button:hover,
@@ -118,7 +106,7 @@
 
 .label {
   display: block;
-  color: var(--green-light);
+  color: var(--color-green-light);
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.18em;
@@ -138,14 +126,13 @@
 }
 
 .intro p {
-  color: var(--muted);
+  color: var(--color-text-secondary);
   font-size: 0.96rem;
   line-height: 1.9;
 }
 
 .treatments {
   padding: 95px 9% 110px;
-  /*background: #ebe9e1;*/
   background: var(--color-border);
 }
 
@@ -166,13 +153,11 @@
 .treatmentCard {
   min-height: 300px;
   padding: 35px 30px;
-  /*background: #f9f8f3;*/
   background: var(--color-cream);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 45px;
-  /*border-bottom: 3px solid #c6d2c3;*/
   border-bottom: 3px solid var(--color-green-sage);
   transition: transform 0.3s ease;
 }
@@ -182,13 +167,13 @@
 }
 
 .number {
-  color: var(--green-light);
+  color: var(--color-green-light);
   font-family: Georgia, serif;
   font-size: 1.5rem;
 }
 
 .subtitle {
-  color: var(--green-light);
+  color: var(--color-green-light);
   font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -203,7 +188,7 @@
 }
 
 .treatmentCard p {
-  color: var(--muted);
+  color: var(--color-text-secondary);
   font-size: 0.88rem;
   line-height: 1.8;
 }
@@ -212,19 +197,18 @@
   max-width: 800px;
   margin: 60px auto 0;
   padding: 35px;
-  background: var(--sage);
+  background: var(--color-green-sage);
   text-align: center;
 }
 
 .personalized > span {
-  color: var(--green);
+  color: var(--color-green-deep);
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.16em;
 }
 
 .personalized p {
-    /*color: #59635a;*/
   color: var(--color-text-secondary);
   font-size: 0.93rem;
   line-height: 1.8;
@@ -242,7 +226,7 @@
 }
 
 .pricingIntro p {
-  color: var(--muted);
+  color: var(--color-text-secondary);
   line-height: 1.8;
 }
 
@@ -257,14 +241,12 @@
 .priceCard {
   padding: 45px 35px;
   text-align: center;
-  /*background: white;*/
   background: var(--color-cream);
-  /*border: 1px solid #e6e6df;*/
   border: 1px solid var(--color-border);
 }
 
 .priceCard > span {
-  color: var(--green-light);
+  color: var(--color-green-light);
   font-size: 0.65rem;
   font-weight: 700;
   letter-spacing: 0.15em;
@@ -278,21 +260,21 @@
 }
 
 .price {
-  color: var(--green);
+  color: var(--color-green-deep);
   font-family: Georgia, serif;
   font-size: 3.3rem;
   margin: 10px 0 20px;
 }
 
 .priceCard p {
-  color: var(--muted);
+  color: var(--color-text-secondary);
   font-size: 0.87rem;
   line-height: 1.8;
 }
 
 .featured {
-  background: var(--sage);
-  border-color: var(--sage);
+  background: var(--color-green-sage);
+  border-color: var(--color-green-sage);
 }
 
 .availability {
@@ -301,7 +283,6 @@
   gap: 60px;
   align-items: center;
   padding: 90px 12%;
-  /*background: #e8e9df;*/
   background: var(--color-border);
 }
 
@@ -310,7 +291,7 @@
 }
 
 .availability p {
-  color: var(--muted);
+  color: var(--color-text-secondary);
   line-height: 1.9;
   margin-top: 20px;
 }
@@ -318,7 +299,7 @@
 .availabilityMark {
   min-height: 270px;
   padding: 35px;
-  background: var(--green);
+  background: var(--color-green-deep);
   color: white;
   display: flex;
   flex-direction: column;
@@ -327,7 +308,6 @@
 }
 
 .availabilityMark span {
-    /*color: #c6d2c3;*/
   color: var(--color-green-sage);
   font-size: 0.65rem;
   letter-spacing: 0.2em;
@@ -344,11 +324,10 @@
   padding: 110px 25px;
   text-align: center;
   color: white;
-  background: var(--green);
+  background: var(--color-green-deep);
 }
 
 .contact .label {
-  /*color: #c6d2c3;*/
   color: var(--color-green-sage);
 }
 
@@ -360,7 +339,6 @@
 .contact > p {
   max-width: 550px;
   margin: 0 auto 35px;
-  /*color: #d4ddd3;*/
   color: var(--color-green-sage);
   line-height: 1.9;
 }
@@ -382,7 +360,6 @@
   display: block;
   width: fit-content;
   margin: 55px auto 0;
-  /*color: #d4ddd3;*/
   color: var(--color-green-sage);
   text-decoration: none;
   font-size: 0.85rem;

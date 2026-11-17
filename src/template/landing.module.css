@@ -1,21 +1,12 @@
 
 .landing {
-  --green: #29382f;
-  --green-light: #536b59;
-  --sage: #dce3d9;
-  --cream: #f5f2eb;
-  --text: #303831;
-  --muted: #747970;
 
   width: 100%;
-  color: var(--text);
-  background: var(--cream);
+  color: var(--color-text-main);
+  background: var(--color-cream);
   overflow: hidden;
 }
 
-.landing * {
-  box-sizing: border-box;
-}
 
 .hero {
   min-height: 680px;
@@ -54,7 +45,7 @@
 
 .eyebrow {
   display: block;
-  color: var(--green-light);
+  color: var(--color-green-light);
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.19em;
@@ -62,7 +53,6 @@
 }
 
 .hero .eyebrow {
-    /*color: #c6d2c3;*/
   color: var(--color-green-sage);
 }
 
@@ -73,10 +63,10 @@
   font-weight: 400;
   letter-spacing: -0.045em;
   margin: 0 0 25px;
+  color: var(--color-cream)
 }
 
 .hero h1 span {
-    /*color: #c2d0bf;*/
     color: var(--color-green-sage);
   font-style: italic;
 }
@@ -95,8 +85,8 @@
   justify-content: center;
   gap: 24px;
   padding: 17px 25px;
-  border: 1px solid var(--green);
-  background: var(--green);
+  border: 1px solid var(--color-green-deep);
+  background: var(--color-green-deep);
   color: white;
   text-decoration: none;
   font-size: 0.85rem;
@@ -106,17 +96,15 @@
 }
 
 .primaryButton:hover {
-    /*background: #465d4b;*/
   background: var(--color-green-light);
-  /*border-color: #465d4b;*/
   border-color: var(--color-green-light);
   transform: translateY(-2px);
 }
 
 .hero .primaryButton {
-  background: var(--cream);
-  border-color: var(--cream);
-  color: var(--green);
+  background: var(--color-cream);
+  border-color: var(--color-cream);
+  color: var(--color-green-deep);
 }
 
 .hero .primaryButton:hover {
@@ -130,7 +118,6 @@
   display: flex;
   gap: 15px;
   align-items: center;
-  /*color: #e1e6df;*/
   color: var(--color-border);
   font-size: 0.65rem;
   letter-spacing: 0.16em;
@@ -156,7 +143,7 @@
 .introduction p,
 .philosophyContent p,
 .contact p {
-  color: var(--muted);
+  color: var(--color-text-secondary);
   font-size: 0.98rem;
   line-height: 1.9;
 }
@@ -201,8 +188,8 @@
   right: 20px;
   top: 20px;
   padding: 9px 13px;
-  background: var(--sage);
-  color: var(--green);
+  background: var(--color-green-sage);
+  color: var(--color-green-deep);
   font-size: 0.65rem;
   letter-spacing: 0.1em;
   font-weight: 700;
@@ -221,7 +208,7 @@
 }
 
 .serviceContent p {
-  color: var(--muted);
+  color: var(--color-text-secondary);
   font-size: 0.95rem;
   line-height: 1.8;
   min-height: 85px;
@@ -232,11 +219,10 @@
   align-items: center;
   gap: 15px;
   margin-top: 18px;
-  color: var(--green);
+  color: var(--color-green-deep);
   text-decoration: none;
   font-size: 0.85rem;
   font-weight: 700;
-  /*border-bottom: 1px solid #b7c2b6;*/
   border-bottom: 1px solid var(--color-green-sage);
   padding-bottom: 8px;
   transition: gap 0.2s ease;
@@ -249,7 +235,7 @@
 .philosophy {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background: var(--sage);
+  background: var(--color-green-sage);
 }
 
 .philosophyImage {
@@ -263,7 +249,7 @@
 }
 
 .philosophyContent h2 {
-  color: var(--green);
+  color: var(--color-green-deep);
 }
 
 .philosophyContent p {
@@ -272,13 +258,12 @@
 
 .contact {
   padding: 110px 25px;
-  background: var(--green);
+  background: var(--color-green-deep);
   color: white;
   text-align: center;
 }
 
 .contact .eyebrow {
-    /*color: #c5d3c2;*/
   color: var(--color-border);
 }
 
@@ -288,15 +273,14 @@
 }
 
 .contact p {
-    /*color: #d4ddd3;*/
   color: var(--color-green-sage);
   margin: 0 auto 35px;
 }
 
 .contact .primaryButton {
-  background: var(--cream);
-  border-color: var(--cream);
-  color: var(--green);
+  background: var(--color-cream);
+  border-color: var(--color-cream);
+  color: var(--color-green-deep);
 }
 
 @media (max-width: 768px) {

@@ -1,0 +1,74 @@
+:root {
+  /* ========================================
+     TYPOGRAPHIE
+  ======================================== */
+
+  --font-heading: Georgia, serif;
+  --font-body: "Noto Sans Mono", sans-serif;
+
+  /* ========================================
+     COULEURS
+  ======================================== */
+
+  /* Palette principale */
+  --color-green-deep: #29382f;
+  --color-green-light: #536b59;
+  --color-green-sage: #dce3d9;
+  --color-cream: #f8f6f0;
+  --color-accent: #d9c6a5;
+
+  /* Textes */
+  --color-text-main: #26332e;
+  --color-text-secondary: #777d76;
+  --color-text-light: #ffffff;
+
+  /* Structure */
+  --color-border: #e2e7df;
+  --color-background: #ffffff;
+
+  /* États */
+  --color-focus: #536b59;
+
+  /* ========================================
+     ESPACEMENTS
+  ======================================== */
+
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 4rem;
+  --spacing-3xl: 6rem;
+
+  /* ========================================
+     DIMENSIONS
+  ======================================== */
+
+  --content-width: 1100px;
+  --content-width-wide: 1280px;
+
+  /* ========================================
+     BORDURES ET OMBRES
+  ======================================== */
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-card: 18px;
+  --radius-button: 999px;
+
+  --border-width: 1px;
+  --shadow-soft: 0 8px 30px rgb(41 56 47 / 8%);
+
+  /* ========================================
+     TRANSITIONS
+  ======================================== */
+
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+
+  /* Surfaces et effets partages */
+  --color-overlay: rgb(25 38 30 / 72%);
+  --shadow-card: 0 8px 30px rgb(0 0 0 / 4%);
+}

@@ -1,0 +1,41 @@
+/* ========================================
+   CONTENEURS
+======================================== */
+
+.container {
+  width: min(100% - 3rem, var(--content-width));
+  margin-inline: auto;
+}
+
+.container-wide {
+  width: min(100% - 3rem, var(--content-width-wide));
+  margin-inline: auto;
+}
+
+/* ========================================
+   TEXTE
+======================================== */
+
+.text-center {
+  text-align: center;
+}
+
+.text-muted {
+  color: var(--color-text-secondary);
+}
+
+/* ========================================
+   ACCESSIBILITÉ
+======================================== */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
